@@ -1,0 +1,8 @@
+* {
+  font-family: consolas;
+  margin-inline: 10px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
