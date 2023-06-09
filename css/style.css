@@ -1,8 +1,68 @@
 * {
   font-family: consolas;
   margin-inline: 10px;
+  font-size: 20px;
 }
 nav {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aqua;
+  height: 4rem;
+  z-index: 1;
+  position: sticky;
+}
+#nav-links {
+  display: flex;
+}
+#showMenu {
+  position: absolute;
+  background-color: aqua;
+  right: 0;
+  top: 0;
+  margin-top: 4rem;
+  margin-inline-end: 0px;
+  min-height: max-content;
+}
+#main-doc {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  grid-template-columns: repeat(autofit, minmax(650px, 1fr));
+}
+#link-menu {
+  width: fit-content;
+  display: none;
+  margin: 2pz;
+  border: double;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#introduction,
+#about,
+#contuct,
+#faqs {
+  background-color: rgba(0, 255, 255, 0.144);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-block: 1rem;
+  width: 40vw;
+}
+#section_title {
+  font-size: xx-large;
+  font-weight: bold;
+}
+@media screen and (max-width: 802px) {
+  #nav-links {
+    display: none;
+  }
+  #link-menu {
+    display: block;
+  }
+  #introduction,
+  #about,
+  #contuct,
+  #faqs {
+    width: 100vw;
+  }
 }
